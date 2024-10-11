@@ -1,0 +1,41 @@
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container.left {
+	margin-top: 50px;
+	align-items: flex-start;
+	flex-direction: column;
+}
+
+.profile-image {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+h1 {
+	font-weight: bold;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+h3 {
+	font-weight: bold;
+}
+
+a {
+	text-decoration: none;
+	color: gray;
+}
+
+a:hover {
+	color: lightgray;
+}
+
+a.current {
+	color: black;
+}
