@@ -1,2 +1,2 @@
 # oceanthunder.github.io
-My personal website. Currently in development!
+My personal website.
