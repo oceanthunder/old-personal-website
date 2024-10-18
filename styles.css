@@ -1,3 +1,83 @@
+:root {
+	--primary-color: #edf2fc;
+	--secondary-color: #212121;
+	--accent-color: gray;
+	--accent-hover-color: lightgray;
+	--card-bg-color: #ffffff;
+	--card-text-color: #000000;
+	--btn-text-color: #ffffff;
+}
+
+.dark-theme {
+	--primary-color: #212121;
+	--secondary-color: #edf2fc;
+	--accent-color: lightgray;
+	--accent-hover-color: gray;
+	--card-bg-color: #333333;
+	--card-text-color: #f8f9fa;
+	--btn-text-color: #000000;
+}
+
+#themeicon {
+	width: 30px;
+	cursor: pointer;
+}
+
+.card {
+    background-color: var(--card-bg-color);
+    color: var(--card-text-color);
+}
+
+.card-title, .card-text {
+    color: var(--card-text-color);
+}
+
+.btn {
+    border: 2px solid var(--accent-color);
+    color: var(--accent-color);
+}
+
+.dark-theme .btn-outline-dark {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+}
+
+.btn-outline-dark {
+    border-color: var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.btn:hover {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+.dark-theme .btn-outline-dark:hover {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+.btn-outline-dark:hover {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+.btn-dark {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: var(--btn-text-color);
+}
+
+.btn-dark:hover {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+body {
+	background-color: var(--primary-color);
+	color: var(--secondary-color);
+}
+
 .container {
 	display: flex;
 	align-items: center;
@@ -21,21 +101,31 @@ h1 {
 	font-weight: bold;
 	margin-top: 20px;
 	margin-bottom: 20px;
+	color: var(--secondary-color);
 }
 
 h3 {
 	font-weight: bold;
+	color: var(--secondary-color);
 }
 
 a {
 	text-decoration: none;
-	color: gray;
+	color: var(--accent-color);
 }
 
 a:hover {
-	color: lightgray;
+	color: var(--accent-hover-color);
 }
 
-a.current {
-	color: black;
+.d-flex {
+	display: flex;
+}
+
+.justify-content-between {
+	justify-content: space-between;
+}
+
+.align-items-center {
+	align-items: center;
 }
